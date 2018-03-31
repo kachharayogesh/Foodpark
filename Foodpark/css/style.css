@@ -1,0 +1,72 @@
+body{
+	font-family: 'Poppins', sans-serif;
+
+}
+
+
+.menu-btns .btn:hover{
+
+	background-color: #C0996B;
+	color: #ffffff; 
+}
+
+.menu-btns .btn{
+	border-radius: 8px;
+	margin-right: 2px;
+	margin-left: 2px;
+	font-weight: bold;
+	color: #666666;
+	height:46px;
+	font-size: 12px;
+	text-transform: uppercase;
+	padding: 10px 20px;
+}
+
+.containerFood{
+	position: relative;
+	width: 415px;
+	height: 80px;
+	border-radius: 10px;
+	box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.2);
+	cursor: pointer ;
+	transition: all 0.3s;
+	background-color: white;
+}
+
+.containerFood img{
+	position: absolute;
+	left: 0;
+	height: 80px;
+	border-radius: 10px 0px 0px 10px;
+}
+
+.food-head{
+	position: absolute;
+	top: 6%;
+	left: 28%;
+	font-size: 18px;
+	text-transform: uppercase;
+	color: #666;
+}
+
+.food-price{
+	position: absolute;
+	top: 6%;
+	right: 5%;
+	font-size: 18px;
+	color: #777;
+}
+
+.containerFood p{
+	position: absolute;
+	left: 28%;
+	top: 62%;
+	padding-right: 2px;
+	color: #888;
+	font-size: 14px;
+}
+
+.containerFood:hover{
+	transform: translateY(1.5px);
+	box-shadow:1px 2px 5px 0px rgba(0,0,0,0.2);
+}
