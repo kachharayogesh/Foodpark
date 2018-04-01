@@ -26,7 +26,7 @@ body{
 	position: relative;
 	width: 415px;
 	height: 80px;
-	border-radius: 10px;
+	border-radius: 6px;
 	box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.2);
 	cursor: pointer ;
 	transition: all 0.3s;
@@ -37,7 +37,7 @@ body{
 	position: absolute;
 	left: 0;
 	height: 80px;
-	border-radius: 10px 0px 0px 10px;
+	 border-radius: 6px 0px 0px 6px;
 }
 
 .food-head{
