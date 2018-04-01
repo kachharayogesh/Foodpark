@@ -19,7 +19,7 @@
 
 <body>
     <div class="menu-btns text-center p-2 mb-5">
-        <button class="btn btn-light m-6 d-inline btn-group-justified tablinks" onclick="openmenu('Starter')" type="button">Starters</button>
+        <button class="btn btn-light m-6 d-inline btn-group-justified tablinks" onclick="openmenu('Starter')" type="button" id="defaultOpen">Starters</button>
         <button class="btn btn-light m-6 d-inline btn-group-justified tablinks" onclick="openmenu('Chinese')" type="button">Chinese</button>
         <button class="btn btn-light m-6 d-inline btn-group-justified tablinks" onclick="openmenu( 'Italian')" type="button">Italian</button>
         <button class="btn btn-light m-6 d-inline btn-group-justified tablinks" onclick="openmenu( 'Main Course')" type="button">Main Course</button>
@@ -29,7 +29,7 @@
         <button class="btn btn-light m-6 d-inline btn-group-justified tablinks" onclick="openmenu( 'Extras')" type="button">Extras</button>
     </div>
     
-<div class="tabcontent" id="Starter" style="display: none;">
+<div class="tabcontent" id="Starter">
     <div id="slider1" class="carousel slide mb-5" data-ride="carousel" data-interval="false">
         <div class="carousel-inner" role="listbox">
             <div class="carousel-item active">
@@ -159,7 +159,7 @@
 </div>
 
 
-<div class="tabcontent" id="Chinese" style="display: none;"">
+<div class="tabcontent" id="Chinese">
     <div id="slider2" class="carousel slide mb-5" data-ride="carousel" data-interval="false">
         <div class="carousel-inner" role="listbox">
             <div class="carousel-item active">
