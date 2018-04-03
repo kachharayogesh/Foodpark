@@ -17,7 +17,7 @@ body{
 	font-weight: bold;
 	color: #666666;
 	height:46px;
-	font-size: 12px;
+	font-size: 14px;
 	text-transform: uppercase;
 	padding: 10px 20px;
 }
@@ -37,6 +37,7 @@ body{
 	position: absolute;
 	left: 0;
 	height: 80px;
+	width : 100px;
 	 border-radius: 6px 0px 0px 6px;
 }
 
@@ -57,19 +58,21 @@ body{
 	color: #777;
 }
 
+
 .containerFood p{
 	position: absolute;
 	left: 28%;
-	top: 62%;
+	top: 45%;
 	padding-right: 2px;
 	color: #888;
 	font-size: 14px;
+	text-align: left;
 }
 
-.containerFood:hover{
+/*.containerFood:hover{
 	transform: translateY(1.5px);
 	box-shadow:1px 2px 5px 0px rgba(0,0,0,0.2);
-}
+}*/
 
 .tabcontent{
 	display: none;
@@ -82,3 +85,77 @@ body{
     to {opacity: 1;}
 }
 
+.waves-effect {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    vertical-align: middle;
+    z-index: 1;
+    -webkit-transition: .3s ease-out;
+    transition: .3s ease-out
+}
+
+.waves-effect .waves-ripple {
+    position: absolute;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    margin-top: -10px;
+    margin-left: -10px;
+    opacity: 0;
+    background: rgba(0, 0, 0, 0.2);
+    -webkit-transition: all 0.7s ease-out;
+    transition: all 0.7s ease-out;
+    -webkit-transition-property: opacity, -webkit-transform;
+    transition-property: opacity, -webkit-transform;
+    transition-property: transform, opacity;
+    transition-property: transform, opacity, -webkit-transform;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    pointer-events: none
+}
+
+@media (min-width: 1301px) {
+	.carousel-item{
+		height: 65vh;
+	}
+}
+@media (min-width: 883px) and (max-width: 1300px){
+	.carousel-item{
+		height: 675px;
+	}
+}
+
+@media (max-width: 882px){
+	.carousel-item{
+		height: 1215px;
+	}
+}
+
+.carousel-item{
+	padding-bottom: 10px;
+}
+
+.btn-light:not(:disabled):not(.disabled):active, .btn-light:not(:disabled):not(.disabled).active, .show > .btn-light.dropdown-toggle{
+	background-color: #C0996B;
+	color: #fff;
+}
+
+.carousel-control-prev-icon{
+	background-image: linear-gradient(#C0996B,#C0996B);
+	clip-path: polygon(100% 0, 50% 50%, 100% 100%, 50% 100%, 0% 50%, 50% 0);
+	margin-left: -85%;
+
+}
+
+.carousel-control-next-icon{
+	background-image: linear-gradient(#C0996B,#C0996B);
+	clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0% 100%, 50% 50%, 0% 0%);
+	margin-right: -85%;
+}

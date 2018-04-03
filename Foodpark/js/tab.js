@@ -1,10 +1,20 @@
-function openmenu(cityName) {
-    var i;
+function openmenu(evt, cityName) {
+    var i, tablinks;
     var x = document.getElementsByClassName("tabcontent");
     for (i = 0; i < x.length; i++) {
         x[i].style.display = "none"; 
     }
-    document.getElementById(cityName).style.display = "block"; 
+
+   tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+
+}
+
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+
+
 }
 
 
