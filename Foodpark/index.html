@@ -9,273 +9,565 @@
     <meta name="author" content="">
     <title>Bootstrap Starter Template</title>
     <!-- This is our Google Poppins font and Font-Awesome -->
+   
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
     <link rel="stylesheet" href="fonts/css/fontawesome-all.css">
     <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="css/style.css" rel="stylesheet">
+    
 </head>
 
 <body>
     <div class="menu-btns text-center p-2 mb-5">
-        <button class="btn btn-light m-6 d-inline btn-group-justified tablinks" onclick="openmenu('Starter')" type="button" id="defaultOpen">Starters</button>
-        <button class="btn btn-light m-6 d-inline btn-group-justified tablinks" onclick="openmenu('Chinese')" type="button">Chinese</button>
-        <button class="btn btn-light m-6 d-inline btn-group-justified tablinks" onclick="openmenu( 'Italian')" type="button">Italian</button>
-        <button class="btn btn-light m-6 d-inline btn-group-justified tablinks" onclick="openmenu( 'Main Course')" type="button">Main Course</button>
-        <button class="btn btn-light m-6 d-inline btn-group-justified tablinks" onclick="openmenu( 'Non Veg')" type="button">Non Veg</button>
-        <button class="btn btn-light m-6 d-inline btn-group-justified tablinks" onclick="openmenu( 'Desserts')" type="button">Desserts</button>
-        <button class="btn btn-light m-6 d-inline btn-group-justified tablinks" onclick="openmenu( 'Cocktail')" type="button">Cocktail</button>
-        <button class="btn btn-light m-6 d-inline btn-group-justified tablinks" onclick="openmenu( 'Extras')" type="button">Extras</button>
+        <button class="btn btn-light waves-effect  waves-light m-6 d-inline btn-group-justified tablinks active" onclick="openmenu(event, 'Starter')" type="button" id="defaultOpen">Starters</button>
+       <button class="btn btn-light waves-effect waves-light m-6 d-inline btn-group-justified tablinks active" onclick="openmenu(event,  'Veg')" type="button">Veg's</button>
+        <button class="btn btn-light waves-effect waves-light m-6 d-inline btn-group-justified tablinks active" onclick="openmenu( event, 'Non Veg')" type="button">Non Veg</button>
+        <button class="btn btn-light waves-effect waves-light m-6 d-inline btn-group-justified tablinks active" onclick="openmenu(event,  'Staples')" type="button">Staples</button>
+        <button class="btn btn-light waves-effect waves-light m-6 d-inline btn-group-justified tablinks active" onclick="openmenu( event, 'Desserts')" type="button">Desserts</button>
+        <button class="btn btn-light waves-effect waves-light m-6 d-inline btn-group-justified tablinks active" onclick="openmenu( event, 'Beverages')" type="button">Beverages</button>
+        
     </div>
     
 <div class="tabcontent" id="Starter">
     <div id="slider1" class="carousel slide mb-5" data-ride="carousel" data-interval="false">
         <div class="carousel-inner" role="listbox">
             <div class="carousel-item active">
-                <div align="center" class="my-4 ">
-                    <div class="containerFood my-4 mx-2 d-inline-block">
-                        <img src="images/img1.jpg">
-                        <h4 class="food-head">Food name1</h4>
-                        <h4 class="food-price font-weight-normal">45$</h4>
-                        <p>pellentesque enim. Aliquam tempor</p>
+                <div align="center" class=" ">
+                    
+                    <div class="containerFood  mx-2 my-4 d-inline-block">
+                        <img src="images/img1_1.jpg">
+                        <h4 class="food-head"> Gobi Manchurian</h4>
+                        <h4 class="food-price font-weight-normal">120/-</h4>
+                        <p>Cauliflower soaked in soya sauce based gravy</p>
                     </div>
-                    <div class="containerFood my-4 mx-2 d-inline-block">
-                        <img src="images/img1.jpg">
-                        <h4 class="food-head">Food name2</h4>
-                        <h4 class="food-price font-weight-normal">45$</h4>
-                        <p>pellentesque enim. Aliquam tempor</p>
+                    <div class="containerFood  mx-2 my-4 d-inline-block">
+                        <img src="images/img1_2.jpg">
+                        <h4 class="food-head"> Veg Manchurian</h4>
+                        <h4 class="food-price font-weight-normal">120/-</h4>
+                        <p> Veg ball sauteed inindo-chinese sauce</p>
                     </div>
-                    <div class="containerFood my-4 mx-2 d-inline-block">
-                        <img src="images/img1.jpg">
-                        <h4 class="food-head">Food name3</h4>
-                        <h4 class="food-price font-weight-normal">45$</h4>
-                        <p>pellentesque enim. Aliquam tempor</p>
+                    <div class="containerFood  mx-2 my-4 d-inline-block">
+                        <img src="images/img1_3.jpg">
+                        <h4 class="food-head">Chilli Paneer</h4>
+                        <h4 class="food-price font-weight-normal">120/-</h4>
+                        <p>Indian Cheese with chilli sauce and spicy gravy</p>
                     </div>
-                    <div class="containerFood my-4 mx-2 d-inline-block">
-                        <img src="images/img1.jpg">
-                        <h4 class="food-head">Food name</h4>
-                        <h4 class="food-price font-weight-normal">45$</h4>
-                        <p>pellentesque enim. Aliquam tempor</p>
+                    <div class="containerFood  mx-2 my-4 d-inline-block">
+                        <img src="images/img1_4.jpg">
+                        <h4 class="food-head">Aloo Bonda</h4>
+                        <h4 class="food-price font-weight-normal">120/-</h4>
+                        <p>Meshed potato balls batter fried with irrestible snacks</p>
                     </div>
-                    <div class="containerFood my-4 mx-2 d-inline-block">
-                        <img src="images/img1.jpg">
-                        <h4 class="food-head">Food name</h4>
-                        <h4 class="food-price font-weight-normal">45$</h4>
-                        <p>pellentesque enim. Aliquam tempor</p>
+                    <div class="containerFood  mx-2 my-4 d-inline-block">
+                        <img src="images/img1_5.jpg">
+                        <h4 class="food-head">Aloo Tikka</h4>
+                        <h4 class="food-price font-weight-normal">120/-</h4>
+                        <p>Potato patty crispy coated outside with chilly sauce </p>
                     </div>
-                    <div class="containerFood my-4 mx-2 d-inline-block">
-                        <img src="images/img1.jpg">
-                        <h4 class="food-head">Food name</h4>
-                        <h4 class="food-price font-weight-normal">45$</h4>
-                        <p>pellentesque enim. Aliquam tempor</p>
+                    <div class="containerFood  mx-2 my-4 d-inline-block">
+                        <img src="images/img1_6.jpg">
+                        <h4 class="food-head">Hara Bhara Kabab</h4>
+                        <h4 class="food-price font-weight-normal">120/-</h4>
+                        <p>Spinach, peas, veggies and potato patty crisped with tamarind</p>
                     </div>
-                    <div class="containerFood my-4 mx-2 d-inline-block">
-                        <img src="images/img1.jpg">
-                        <h4 class="food-head">Food name</h4>
-                        <h4 class="food-price font-weight-normal">45$</h4>
-                        <p>pellentesque enim. Aliquam tempor</p>
+                    <div class="containerFood  mx-2 my-4 d-inline-block">
+                        <img src="images/img1_7.jpg">
+                        <h4 class="food-head">Plain Dosa</h4>
+                        <h4 class="food-price font-weight-normal">120/-</h4>
+                        <p>Lentil crepe grilled and served with chutneys</p>
                     </div>
-                    <div class="containerFood my-4 mx-2 d-inline-block">
-                        <img src="images/img1.jpg">
-                        <h4 class="food-head">Food name</h4>
-                        <h4 class="food-price font-weight-normal">45$</h4>
-                        <p>pellentesque enim. Aliquam tempor</p>
+                    <div class="containerFood  mx-2 my-4 d-inline-block">
+                        <img src="images/img1_8.jpg">
+                        <h4 class="food-head">Mysore Masala Dosa</h4>
+                        <h4 class="food-price font-weight-normal">120/-</h4>
+                        <p>Rice crepe grilled with spread of chilli paste</p>
                     </div>
-                    <div class="containerFood my-4 mx-2 d-inline-block">
-                        <img src="images/img1.jpg">
-                        <h4 class="food-head">Food name</h4>
-                        <h4 class="food-price font-weight-normal">45$</h4>
-                        <p>pellentesque enim. Aliquam tempor</p>
+                    <div class="containerFood  mx-2 my-4 d-inline-block">
+                        <img src="images/img1_9.jpg">
+                        <h4 class="food-head">Uttapam</h4>
+                        <h4 class="food-price font-weight-normal">120/-</h4>
+                        <p>Savory lentil panckae with semolina pudding</p>
                     </div>
                 </div>
             </div>
             <div class="carousel-item">
-                <div align="center" class="my-4 ">
-                    <div class="containerFood my-4 mx-2 d-inline-block">
-                        <img src="images/img1.jpg">
-                        <h4 class="food-head">Food name</h4>
-                        <h4 class="food-price font-weight-normal">45$</h4>
-                        <p>pellentesque enim. Aliquam tempor</p>
+                <div align="center" class=" ">
+                    <div class="containerFood  mx-2 my-4 d-inline-block">
+                        <img src="images/img1_11.jpg">
+                        <h4 class="food-head">Murgh Rasam Patti</h4>
+                        <h4 class="food-price font-weight-normal">450/-</h4>
+                        <p>Succulent chicken supreme, marinted and infused with creame cheese</p>
                     </div>
-                    <div class="containerFood my-4 mx-2 d-inline-block">
-                        <img src="images/img1.jpg">
-                        <h4 class="food-head">Food name</h4>
-                        <h4 class="food-price font-weight-normal">45$</h4>
-                        <p>pellentesque enim. Aliquam tempor</p>
+                    <div class="containerFood  mx-2 my-4 d-inline-block">
+                        <img src="images/img1_12.jpg">
+                        <h4 class="food-head">Halem ke Kabab</h4>
+                        <h4 class="food-price font-weight-normal">450/-</h4>
+                        <p>Hyderabadi lambed patties flavoured nizami spices</p>
                     </div>
-                    <div class="containerFood my-4 mx-2 d-inline-block">
-                        <img src="images/img1.jpg">
-                        <h4 class="food-head">Food name</h4>
-                        <h4 class="food-price font-weight-normal">45$</h4>
-                        <p>pellentesque enim. Aliquam tempor</p>
+                    <div class="containerFood  mx-2 my-4 d-inline-block">
+                        <img src="images/img1_13.jpg">
+                        <h4 class="food-head">Murgh Tikka Khaas</h4>
+                        <h4 class="food-price font-weight-normal">450/-</h4>
+                        <p>Chicken morsels marinated with kashmiri chillies</p>
                     </div>
-                    <div class="containerFood my-4 mx-2 d-inline-block">
-                        <img src="images/img1.jpg">
-                        <h4 class="food-head">Food name</h4>
-                        <h4 class="food-price font-weight-normal">45$</h4>
-                        <p>pellentesque enim. Aliquam tempor</p>
+                    <div class="containerFood  mx-2 my-4 d-inline-block">
+                        <img src="images/img1_14.jpg">
+                        <h4 class="food-head">Murgh Chaap</h4>
+                        <h4 class="food-price font-weight-normal">450/-</h4>
+                        <p>Chicken leg subtly marinated overnight and char grilled</p>
                     </div>
-                    <div class="containerFood my-4 mx-2 d-inline-block">
-                        <img src="images/img1.jpg">
-                        <h4 class="food-head">Food name</h4>
-                        <h4 class="food-price font-weight-normal">45$</h4>
-                        <p>pellentesque enim. Aliquam tempor</p>
+                    <div class="containerFood  mx-2 my-4 d-inline-block">
+                        <img src="images/img1_15.jpg">
+                        <h4 class="food-head">Seekh Kabab</h4>
+                        <h4 class="food-price font-weight-normal">450/-</h4>
+                        <p>Skewed lambed mince kabab cooked in tandoor</p>
                     </div>
-                    <div class="containerFood my-4 mx-2 d-inline-block">
-                        <img src="images/img1.jpg">
-                        <h4 class="food-head">Food name</h4>
-                        <h4 class="food-price font-weight-normal">45$</h4>
-                        <p>pellentesque enim. Aliquam tempor</p>
+                    <div class="containerFood  mx-2 my-4 d-inline-block">
+                        <img src="images/img1_16.jpg">
+                        <h4 class="food-head">Tandoori Sarson Tikka</h4>
+                        <h4 class="food-price font-weight-normal">450/-</h4>
+                        <p>Mustard morinated fish steaks cooked in clay oven</p>
                     </div>
-                    <div class="containerFood my-4 mx-2 d-inline-block">
-                        <img src="images/img1.jpg">
-                        <h4 class="food-head">Food name</h4>
-                        <h4 class="food-price font-weight-normal">45$</h4>
-                        <p>pellentesque enim. Aliquam tempor</p>
-                    </div>
-                    <div class="containerFood my-4 mx-2 d-inline-block">
-                        <img src="images/img1.jpg">
-                        <h4 class="food-head">Food name</h4>
-                        <h4 class="food-price font-weight-normal">45$</h4>
-                        <p>pellentesque enim. Aliquam tempor</p>
-                    </div>
-                    <div class="containerFood my-4 mx-2 d-inline-block">
-                        <img src="images/img1.jpg">
-                        <h4 class="food-head">Food name</h4>
-                        <h4 class="food-price font-weight-normal">45$</h4>
-                        <p>pellentesque enim. Aliquam tempor</p>
-                    </div>
+                    
                 </div>
             </div>
         </div>
         <a href="#slider1" class="carousel-control-prev" data-slide="prev">
-            <span class="carousel-control-prev-icon" style="margin-left: -80%; background-color: grey"></span>
+            <span class="carousel-control-prev-icon" ></span>
           </a>
         <a href="#slider1" class="carousel-control-next" data-slide="next">
-            <span class="carousel-control-next-icon" style="margin-right: -80%; background-color: grey"></span>
+            <span class="carousel-control-next-icon" ></span>
           </a>
     </div>
 </div>
 
 
-<div class="tabcontent" id="Chinese">
-    <div id="slider2" class="carousel slide mb-5" data-ride="carousel" data-interval="false">
+
+
+<div class="tabcontent" id="Veg">
+    <div id="slider4" class="carousel slide mb-5" data-ride="carousel" data-interval="false">
         <div class="carousel-inner" role="listbox">
             <div class="carousel-item active">
-                <div align="center" class="my-4 ">
-                    <div class="containerFood my-4 mx-2 d-inline-block">
-                        <img src="images/img1.jpg">
-                        <h4 class="food-head">Food name</h4>
-                        <h4 class="food-price font-weight-normal">45$</h4>
-                        <p>pellentesque enim. Aliquam tempor</p>
+                <div align="center" class=" ">
+                    <div class="containerFood  mx-2 my-4 d-inline-block">
+                        <img src="images/img3_1.jpg">
+                        <h4 class="food-head">Tadka Dal Curry/h4>
+                        <h4 class="food-price font-weight-normal">250/-</h4>
+                        <p>Cooked lentils tempered with fried spices and herbs</p>
                     </div>
-                    <div class="containerFood my-4 mx-2 d-inline-block">
-                        <img src="images/img1.jpg">
-                        <h4 class="food-head">Food name</h4>
-                        <h4 class="food-price font-weight-normal">45$</h4>
-                        <p>pellentesque enim. Aliquam tempor</p>
+                    <div class="containerFood  mx-2 my-4 d-inline-block">
+                        <img src="images/img3_2.jpg">
+                        <h4 class="food-head">Dal Makhani</h4>
+                        <h4 class="food-price font-weight-normal">250/-</h4>
+                        <p>Punjabi style whole black lentil, red kidney beans, butter</p>
                     </div>
-                    <div class="containerFood my-4 mx-2 d-inline-block">
-                        <img src="images/img1.jpg">
-                        <h4 class="food-head">Food name</h4>
-                        <h4 class="food-price font-weight-normal">45$</h4>
-                        <p>pellentesque enim. Aliquam tempor</p>
+                    <div class="containerFood  mx-2 my-4 d-inline-block">
+                        <img src="images/img3_3.jpg">
+                        <h4 class="food-head">Channa Masala</h4>
+                        <h4 class="food-price font-weight-normal">250/-</h4>
+                        <p>Chickpeas in tomato gravy</p>
                     </div>
-                    <div class="containerFood my-4 mx-2 d-inline-block">
-                        <img src="images/img1.jpg">
-                        <h4 class="food-head">Food name</h4>
-                        <h4 class="food-price font-weight-normal">45$</h4>
-                        <p>pellentesque enim. Aliquam tempor</p>
+                    <div class="containerFood  mx-2 my-4 d-inline-block">
+                        <img src="images/img3_4.jpg">
+                        <h4 class="food-head">Kadai Paneer</h4>
+                        <h4 class="food-price font-weight-normal">250/-</h4>
+                        <p>Indian Cheese sauteed in kadai work and tomato gravy</p>
                     </div>
-                    <div class="containerFood my-4 mx-2 d-inline-block">
-                        <img src="images/img1.jpg">
-                        <h4 class="food-head">Food name</h4>
-                        <h4 class="food-price font-weight-normal">45$</h4>
-                        <p>pellentesque enim. Aliquam tempor</p>
+                    <div class="containerFood  mx-2 my-4 d-inline-block">
+                        <img src="images/img3_5.jpg">
+                        <h4 class="food-head">Mutter Paneer</h4>
+                        <h4 class="food-price font-weight-normal">250/-</h4>
+                        <p>Indian Cheese and green peas in thick creamy gravy</p>
                     </div>
-                    <div class="containerFood my-4 mx-2 d-inline-block">
-                        <img src="images/img1.jpg">
-                        <h4 class="food-head">Food name</h4>
-                        <h4 class="food-price font-weight-normal">45$</h4>
-                        <p>pellentesque enim. Aliquam tempor</p>
+                    <div class="containerFood  mx-2 my-4 d-inline-block">
+                        <img src="images/img3_6.jpg">
+                        <h4 class="food-head">Paneer Butter Masala</h4>
+                        <h4 class="food-price font-weight-normal">250/-</h4>
+                        <p>Indian Cheese cubes sauteed in butter gravy</p>
                     </div>
-                    <div class="containerFood my-4 mx-2 d-inline-block">
-                        <img src="images/img1.jpg">
-                        <h4 class="food-head">Food name</h4>
-                        <h4 class="food-price font-weight-normal">45$</h4>
-                        <p>pellentesque enim. Aliquam tempor</p>
+                    <div class="containerFood  mx-2 my-4 d-inline-block">
+                        <img src="images/img3_7.jpg">
+                        <h4 class="food-head">Paneer Makhani</h4>
+                        <h4 class="food-price font-weight-normal">250/-</h4>
+                        <p>Indian Cheese cubes sauteed in tomato gravy</p>
+                    </div>
+                    <div class="containerFood  mx-2 my-4 d-inline-block">
+                        <img src="images/img3_8.jpg">
+                        <h4 class="food-head">Mushroom Mutter</h4>
+                        <h4 class="food-price font-weight-normal">250/-</h4>
+                        <p>Mushroom and green peas, thick tomato gravy</p>
+                    </div>
+                    <div class="containerFood  mx-2 my-4 d-inline-block">
+                        <img src="images/img3_9.jpg">
+                        <h4 class="food-head">Malai Kofta</h4>
+                        <h4 class="food-price font-weight-normal">250/-</h4>
+                        <p>Cottage, Cheese, cream ad nut balls cooked in a rich creamy gravy</p>
                     </div>
                
                 </div>
             </div>
             <div class="carousel-item">
-                <div align="center" class="my-4 ">
-                    <div class="containerFood my-4 mx-2 d-inline-block">
-                        <img src="images/img1.jpg">
-                        <h4 class="food-head">Food name</h4>
-                        <h4 class="food-price font-weight-normal">45$</h4>
-                        <p>pellentesque enim. Aliquam tempor</p>
+                <div align="center" class=" ">
+                    <div class="containerFood  mx-2 my-4 d-inline-block">
+                        <img src="images/img3_11.jpg">
+                        <h4 class="food-head">Veg Korma</h4>
+                        <h4 class="food-price font-weight-normal">250/-</h4>
+                        <p>Stewed in yogurt,coconut milk and nut gravy</p>
                     </div>
-                    <div class="containerFood my-4 mx-2 d-inline-block">
-                        <img src="images/img1.jpg">
-                        <h4 class="food-head">Food name</h4>
-                        <h4 class="food-price font-weight-normal">45$</h4>
-                        <p>pellentesque enim. Aliquam tempor</p>
+                    <div class="containerFood  mx-2 my-4 d-inline-block">
+                        <img src="images/img3_12.jpg">
+                        <h4 class="food-head">Navrathan Korma</h4>
+                        <h4 class="food-price font-weight-normal">250/-</h4>
+                        <p>Vegetables and fruit with mild sweet and savory gravy</p>
                     </div>
-                    <div class="containerFood my-4 mx-2 d-inline-block">
-                        <img src="images/img1.jpg">
-                        <h4 class="food-head">Food name</h4>
-                        <h4 class="food-price font-weight-normal">45$</h4>
-                        <p>pellentesque enim. Aliquam tempor</p>
+                    <div class="containerFood  mx-2 my-4 d-inline-block">
+                        <img src="images/img3_13.jpg">
+                        <h4 class="food-head">Kadai Mixed Vegatables</h4>
+                        <h4 class="food-price font-weight-normal">250/-</h4>
+                        <p>Sauteed in vegetables with in tomato gravy</p>
                     </div>
-                    <div class="containerFood my-4 mx-2 d-inline-block">
-                        <img src="images/img1.jpg">
-                        <h4 class="food-head">Food name</h4>
-                        <h4 class="food-price font-weight-normal">45$</h4>
-                        <p>pellentesque enim. Aliquam tempor</p>
+                    <div class="containerFood  mx-2 my-4 d-inline-block">
+                        <img src="images/img3_14.jpg">
+                        <h4 class="food-head">Bhindi Masala</h4>
+                        <h4 class="food-price font-weight-normal">250/-</h4>
+                        <p>Spiced, sauteed lady finger with okra</p>
                     </div>
-                    <div class="containerFood my-4 mx-2 d-inline-block">
-                        <img src="images/img1.jpg">
-                        <h4 class="food-head">Food name</h4>
-                        <h4 class="food-price font-weight-normal">45$</h4>
-                        <p>pellentesque enim. Aliquam tempor</p>
+                    <div class="containerFood  mx-2 my-4 d-inline-block">
+                        <img src="images/img3_15.jpg">
+                        <h4 class="food-head">Bhindi Do Piyaza</h4>
+                        <h4 class="food-price font-weight-normal">250/-</h4>
+                        <p>Okrqa cooked in tomato and onion gravy</p>
                     </div>
-                    <div class="containerFood my-4 mx-2 d-inline-block">
-                        <img src="images/img1.jpg">
-                        <h4 class="food-head">Food name</h4>
-                        <h4 class="food-price font-weight-normal">45$</h4>
-                        <p>pellentesque enim. Aliquam tempor</p>
+                    <div class="containerFood  mx-2 my-4 d-inline-block">
+                        <img src="images/img3_16.jpg">
+                        <h4 class="food-head">Jeera Aloo</h4>
+                        <h4 class="food-price font-weight-normal">250/-</h4>
+                        <p>Potato sauteed and tempered with cumin seed, chilli, onion and tomato</p>
                     </div>
-                    <div class="containerFood my-4 mx-2 d-inline-block">
-                        <img src="images/img1.jpg">
-                        <h4 class="food-head">Food name</h4>
-                        <h4 class="food-price font-weight-normal">45$</h4>
-                        <p>pellentesque enim. Aliquam tempor</p>
+                    <div class="containerFood  mx-2 my-4 d-inline-block">
+                        <img src="images/img3_17.jpg">
+                        <h4 class="food-head">Aloo Gobi</h4>
+                        <h4 class="food-price font-weight-normal">250/-</h4>
+                        <p>Potatoes and Cauliflower saturated finished in a mild gravy</p>
                     </div>
-                    <div class="containerFood my-4 mx-2 d-inline-block">
-                        <img src="images/img1.jpg">
-                        <h4 class="food-head">Food name</h4>
-                        <h4 class="food-price font-weight-normal">45$</h4>
-                        <p>pellentesque enim. Aliquam tempor</p>
+                    <div class="containerFood  mx-2 my-4 d-inline-block">
+                        <img src="images/img3_18.jpg">
+                        <h4 class="food-head">Baingan Ka Bharta</h4>
+                        <h4 class="food-price font-weight-normal">250/-</h4>
+                        <p>Oven roasted aubergine cooked in masala gravy</p>
+                    </div>
+                    <div class="containerFood  mx-2 my-4 d-inline-block">
+                        <img src="images/img3_19.jpg">
+                        <h4 class="food-head">Sabji Nizami</h4>
+                        <h4 class="food-price font-weight-normal">250/-</h4>
+                        <p>Baby corn, mushroom, potatoes and spinach sauteed in sesame seeds</p>
                     </div>
                    
                 </div>
             </div>
         </div>
-        <a href="#slider2" class="carousel-control-prev" data-slide="prev">
-            <span class="carousel-control-prev-icon" style="margin-left: -80%; background-color: grey"></span>
+        <a href="#slider4" class="carousel-control-prev" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+</div>          </a>
+        <a href="#slider4" class="carousel-control-next" data-slide="next">
+            <span class="carousel-control-next-icon" ></span>
           </a>
-        <a href="#slider2" class="carousel-control-next" data-slide="next">
-            <span class="carousel-control-next-icon" style="margin-right: -80%; background-color: grey"></span>
+    </div>
+
+</div>
+
+<div class="tabcontent" id="Non Veg">
+    <div id="slider5" class="carousel slide mb-5" data-ride="carousel" data-interval="false">
+        <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+                <div align="center" class=" ">
+                    <div class="containerFood  mx-2 my-4 d-inline-block">
+                        <img src="images/img4_1.jpg">
+                        <h4 class="food-head">Murgh Makhani</h4>
+                        <h4 class="food-price font-weight-normal">360/-</h4>
+                        <p>Tomato, cream and butter gravy infused with aromatic spices</p>
+                    </div>
+                    <div class="containerFood  mx-2 my-4 d-inline-block">
+                        <img src="images/img4_2.jpg">
+                        <h4 class="food-head">Murgh Shaahi Korma</h4>
+                        <h4 class="food-price font-weight-normal">360/-</h4>
+                        <p>Chicken cooked in rich gravy with nuts, Saffron, cream and spices</p>
+                    </div>
+                    <div class="containerFood  mx-2 my-4 d-inline-block">
+                        <img src="images/img4_3.jpg">
+                        <h4 class="food-head">Chicken Tikka Masala</h4>
+                        <h4 class="food-price font-weight-normal">360/-</h4>
+                        <p>Chicken tikka cooked in aromatic masala gravy</p>
+                    </div>
+                    <div class="containerFood  mx-2 my-4 d-inline-block">
+                        <img src="images/img4_4.jpg">
+                        <h4 class="food-head">Murgh Saagwaala</h4>
+                        <h4 class="food-price font-weight-normal">360/-</h4>
+                        <p>Chicken pieces cooked in silky spinach and onion gravy</p>
+                    </div>
+                    <div class="containerFood  mx-2 my-4 d-inline-block">
+                        <img src="images/img4_5.jpg">
+                        <h4 class="food-head">Murgh Do Piyaza</h4>
+                        <h4 class="food-price font-weight-normal">360/-</h4>
+                        <p>Chicken pieces cooked in tomato and onion</p>
+                    </div>
+                    <div class="containerFood  mx-2 my-4 d-inline-block">
+                        <img src="images/img4_6.jpg">
+                        <h4 class="food-head">Madras Chicken</h4>
+                        <h4 class="food-price font-weight-normal">360/-</h4>
+                        <p>Chicken cooked in gravy with coconut and aromatic spices</p>
+                    </div>
+                    <div class="containerFood  mx-2 my-4 d-inline-block">
+                        <img src="images/img4_7.jpg">
+                        <h4 class="food-head">Nilgiri Murgh</h4>
+                        <h4 class="food-price font-weight-normal">360/-</h4>
+                        <p>Boneless chicken cooked with mint and coconut in tomato and onion gravy</p>
+                    </div>
+                    <div class="containerFood  mx-2 my-4 d-inline-block">
+                        <img src="images/img4_8.jpg">
+                        <h4 class="food-head">Kadai Chicken</h4>
+                        <h4 class="food-price font-weight-normal">360/-</h4>
+                        <p>Tender Chicken pieces cooked in a semi dry with onion, tomato and capsicum</p>
+                    </div>
+                    <div class="containerFood  mx-2 my-4 d-inline-block">
+                        <img src="images/img4_9.jpg">
+                        <h4 class="food-head">Fish Tikka</h4>
+                        <h4 class="food-price font-weight-normal">360/-</h4>
+                        <p>Mackerel fish tikka with carom seeds cooked in a clay oven</p>
+                    </div>
+               
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div align="center" class=" ">
+                    <div class="containerFood  mx-2 my-4 d-inline-block">
+                        <img src="images/img4_11.jpg">
+                        <h4 class="food-head">Kheema Mutter</h4>
+                        <h4 class="food-price font-weight-normal">360/-</h4>
+                        <p>Mixed lamb and fresh green peas cooked in a gravy of spices and ginger</p>
+                    </div>
+                    <div class="containerFood  mx-2 my-4 d-inline-block">
+                        <img src="images/img4_12.jpg">
+                        <h4 class="food-head">Lamb Vindaloo</h4>
+                        <h4 class="food-price font-weight-normal">360/-</h4>
+                        <p>Lamb cooked in a spicy vandaloo sauce</p>
+                    </div>
+                    <div class="containerFood  mx-2 my-4 d-inline-block">
+                        <img src="images/img4_13.jpg">
+                        <h4 class="food-head">Nilgiri Lamb</h4>
+                        <h4 class="food-price font-weight-normal">360/-</h4>
+                        <p>Lamb cooked with mint and coconut in a tomato onion gravy</p>
+                    </div>
+                    <div class="containerFood  mx-2 my-4 d-inline-block">
+                        <img src="images/img4_14.jpg">
+                        <h4 class="food-head">Tandoori Chicken</h4>
+                        <h4 class="food-price font-weight-normal">360/-</h4>
+                        <p>Leg of chicken marinated with red spices and cooked in clay oven</p>
+                    </div>
+                    <div class="containerFood  mx-2 my-4 d-inline-block">
+                        <img src="images/img4_15.jpg">
+                        <h4 class="food-head">Goan Fish Curry</h4>
+                        <h4 class="food-price font-weight-normal">360/-</h4>
+                        <p>Fish fillet cooked with tender coconut and whole spice powder</p>
+                    </div>
+                    <div class="containerFood  mx-2 my-4 d-inline-block">
+                        <img src="images/img4_16.jpg">
+                        <h4 class="food-head">Goan Prawn Curry</h4>
+                        <h4 class="food-price font-weight-normal">360/-</h4>
+                        <p>Fresh Prawns cooked with tender coconut and whole spice powder</p>
+                    </div>
+                    <div class="containerFood  mx-2 my-4 d-inline-block">
+                        <img src="images/img4_17.jpg">
+                        <h4 class="food-head">Mix Seafood Curry</h4>
+                        <h4 class="food-price font-weight-normal">360/-</h4>
+                        <p>Combination of fresh prawns and fish in a curry</p>
+                    </div>
+                    <div class="containerFood  mx-2 my-4 d-inline-block">
+                        <img src="images/img4_18.jpg">
+                        <h4 class="food-head">Machchi Masala</h4>
+                        <h4 class="food-price font-weight-normal">45$</h4>
+                        <p>Fish filet cooked in masala gravy</p>
+                    </div>
+                    <div class="containerFood  mx-2 my-4 d-inline-block">
+                        <img src="images/img4_19.jpg">
+                        <h4 class="food-head">Amritsari fish</h4>
+                        <h4 class="food-price font-weight-normal">360/-</h4>
+                        <p>Macherel coateed with gram flour, seeds cooked in a clay oven</p>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+        <a href="#slider5" class="carousel-control-prev" data-slide="prev">
+            <span class="carousel-control-prev-icon" ></span>
+          </a>
+        <a href="#slider5" class="carousel-control-next" data-slide="next">
+            <span class="carousel-control-next-icon" ></span>
           </a>
     </div>
 </div>
 
+<div class="tabcontent" id="Staples">
+    
+                <div align="center" class=" ">
+                    <div class="containerFood  mx-2 my-4 d-inline-block">
+                        <img src="images/img5_1.jpg">
+                        <h4 class="food-head">Naan</h4>
+                        <h4 class="food-price font-weight-normal">10/-</h4>
+                        <p>Soft clay oven baked leavened bread</p>
+                    </div>
+                    <div class="containerFood  mx-2 my-4 d-inline-block">
+                        <img src="images/img5_2.jpg">
+                        <h4 class="food-head">Butter Naan</h4>
+                        <h4 class="food-price font-weight-normal">12/-</h4>
+                        <p>Soft clay oven baked leavened bread with butter</p>
+                    </div>
+                    <div class="containerFood  mx-2 my-4 d-inline-block">
+                        <img src="images/img5_3.jpg">
+                        <h4 class="food-head">Garlic Naan</h4>
+                        <h4 class="food-price font-weight-normal">25/-</h4>
+                        <p>Soft clay oven baked leavened bread with garlic butter</p>
+                    </div>
+                    <div class="containerFood  mx-2 my-4 d-inline-block">
+                        <img src="images/img5_4.jpg">
+                        <h4 class="food-head">Tandoori Roti</h4>
+                        <h4 class="food-price font-weight-normal">8/-</h4>
+                        <p>Clay oven cooked whole wheat unleavened bread</p>
+                    </div>
+                    <div class="containerFood  mx-2 my-4 d-inline-block">
+                        <img src="images/img5_5.jpg">
+                        <h4 class="food-head">Roomali Roti</h4>
+                        <h4 class="food-price font-weight-normal">20/-</h4>
+                        <p>Thin whole wheat unleavened bread cooked on an inverted wok</p>
+                    </div>
+                    <div class="containerFood  mx-2 my-4 d-inline-block">
+                        <img src="images/img5_6.jpg">
+                        <h4 class="food-head">Lachcha Paratha</h4>
+                        <h4 class="food-price font-weight-normal">25/-</h4>
+                        <p>Layered buttery whole wheat bread</p>
+                    </div>
+                    <div class="containerFood  mx-2 my-4 d-inline-block">
+                        <img src="images/img5_7.jpg">
+                        <h4 class="food-head">Masala Kulcha</h4>
+                        <h4 class="food-price font-weight-normal">25/-</h4>
+                        <p>Layered whole wheat bread with carom seeds and butter cooked in clay oven</p>
+                    </div>
+                    <div class="containerFood  mx-2 my-4 d-inline-block">
+                        <img src="images/img5_8.jpg">
+                        <h4 class="food-head">Stuffed Kulcha</h4>
+                        <h4 class="food-price font-weight-normal">25/-</h4>
+                        <p>Soft clay oven baked leavemned bread with choice of stuffing(onion/paneer)</p>
+                    </div>
+                    <div class="containerFood  mx-2 my-4 d-inline-block">
+                        <img src="images/img5_9.jpg">
+                        <h4 class="food-head">Kashmiri Naan</h4>
+                        <h4 class="food-price font-weight-normal">25/-</h4>
+                        <p>SOft clay oven baked bread with dry fruits and grated coconut</p>
+                    </div>
+               
+                </div>
+</div>
+
+<div class="tabcontent" id="Desserts">
+    
+                <div align="center" class=" ">
+                    <div class="containerFood  mx-2 my-4 d-inline-block">
+                        <img src="images/img6_1.jpg">
+                        <h4 class="food-head">Gulab Jamun</h4>
+                        <h4 class="food-price font-weight-normal">120/-</h4>
+                        <p>Reduced spongy milk balls soaked in honeyed syrup</p>
+                    </div>
+                    <div class="containerFood  mx-2 my-4 d-inline-block">
+                        <img src="images/img6_2.jpg">
+                        <h4 class="food-head">Ras Malai</h4>
+                        <h4 class="food-price font-weight-normal">150/-</h4>
+                        <p>Soft cottage cheese balls soaked in milk sauce with saffron and pistachio</p>
+                    </div>
+                    <div class="containerFood  mx-2 my-4 d-inline-block">
+                        <img src="images/img6_3.jpg">
+                        <h4 class="food-head">Gajar ka Halwa</h4>
+                        <h4 class="food-price font-weight-normal">150/-</h4>
+                        <p>Grated carrot coked in milkand sugar</p>
+                    </div>
+                    <div class="containerFood  mx-2 my-4 d-inline-block">
+                        <img src="images/img6_4.jpg">
+                        <h4 class="food-head">   Double Petha</h4>
+                        <h4 class="food-price font-weight-normal">150/-</h4>
+                        <p>Deep fried bread cakes bathed in a creamy sweet sauce</p>
+                    </div>
+                    <div class="containerFood  mx-2 my-4 d-inline-block">
+                        <img src="images/img6_5.jpg">
+                        <h4 class="food-head">  Kheer</h4>
+                        <h4 class="food-price font-weight-normal">150/-</h4>
+                        <p>Classic india rice pudding with nuts and raisins, a hist of cinnamon</p>
+                    </div>
+                    <div class="containerFood  mx-2 my-4 d-inline-block">
+                        <img src="images/img6_6.jpg">
+                        <h4 class="food-head">Anand bhog</h4>
+                        <h4 class="food-price font-weight-normal">400/-</h4>
+                        <p>Dry fruit stuffed chenna dumpling</p>
+                    </div>
+                    <div class="containerFood  mx-2 my-4 d-inline-block">
+                        <img src="images/img6_7.jpg">
+                        <h4 class="food-head">Strawberry shortcake</h4>
+                        <h4 class="food-price font-weight-normal">400/-</h4>
+                        <p>Vanilla shortcake layered with fresh strawberries and whipped cream</p>
+                    </div>
+                    <div class="containerFood  mx-2 my-4 d-inline-block">
+                        <img src="images/img6_8.jpg">
+                        <h4 class="food-head">New York Cheesecake</h4>
+                        <h4 class="food-price font-weight-normal">400/-</h4>
+                        <p>Creamy cheesecake with graham cracker crust and whipped cream</p>
+                    </div>
+                    <div class="containerFood  mx-2 my-4 d-inline-block">
+                        <img src="images/img6_9.jpg">
+                        <h4 class="food-head">Ice cream Sundae</h4>
+                        <h4 class="food-price font-weight-normal">550</h4>
+                        <p>Hand dipped vanilla ice cream with chocolate, caramel and strawberry syrup</p>
+                    </div>
+               
+                </div>
+</div>
+        
+
+<div class="tabcontent" id="Beverages">
+   
+                <div align="center" class=" ">
+                    <div class="containerFood  mx-2 my-4 d-inline-block">
+                        <img src="images/img7_1.jpg">
+                        <h4 class="food-head">Beer</h4>
+                        <h4 class="food-price font-weight-normal">250/-</h4>
+                        <p>Godfather, Sea Migual, Budweiser, Heinekin, Skol</p>
+                    </div>
+                    <div class="containerFood  mx-2 my-4 d-inline-block">
+                        <img src="images/img7_2.jpg">
+                        <h4 class="food-head">Soft Drinks</h4>
+                        <h4 class="food-price font-weight-normal">60/-</h4>
+                        <p>Coke, Sprite, Mountain Dew, Pepsi, Mazza</p>
+                    </div>
+                    <div class="containerFood  mx-2 my-4 d-inline-block">
+                        <img src="images/img7_3.jpg">
+                        <h4 class="food-head">Mango Lassi</h4>
+                        <h4 class="food-price font-weight-normal">100/-</h4>
+                        <p>Lasi prepared with fresh and juicy mangoes</p>
+                    </div>
+                    
+</div>
+
+
+
+    
+   
+
+
     <script src="js/jquery-3.2.1.slim.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/tab.js"></script>
+   	<script src="js/tab.js"></script>
+   	<script src="js/materialize.min.js"></script>
+
 </body>
 
 </html>
